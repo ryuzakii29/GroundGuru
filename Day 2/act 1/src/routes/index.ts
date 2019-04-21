@@ -1,4 +1,4 @@
-import { user } from "../routes/lib/user.route";
+import { user } from "./lib/user.routes";
 
 export class Routes {
   constructor(private app: any) {
@@ -6,6 +6,6 @@ export class Routes {
   }
 
   setRoutes() {
-    this.app.use("/a", user);
+    this.app.use("/user", user);
   }
 }
